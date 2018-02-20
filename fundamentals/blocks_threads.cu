@@ -3,7 +3,7 @@
 
 __global__ void gpukernel()
 {
-    printf("%d %d\n", blockIdx.x, threadIdx.x);
+    printf("%d %d %d %d\n", blockIdx.x, threadIdx.x, blockDim.x, gridDim.x);
 }
 
 int main(int argc, char** argv)
