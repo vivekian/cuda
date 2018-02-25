@@ -11,5 +11,7 @@ int main(int argc, char** argv)
    printf("Memory bus width (bits) : %d\n", prop.memoryBusWidth);
    printf("Compute capability : %d.%d\n", prop.major, prop.minor);
    printf("Max threads per block : %d\n", prop.maxThreadsPerBlock);
+   printf("Max threads per multiprocessor: %d\n", prop.maxThreadsPerMultiProcessor);
+   printf("Multiprocessor count: %d\n", prop.multiProcessorCount);
    return 0;
 }
